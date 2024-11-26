@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Urna Cimol</title>
+  <link rel="stylesheet" href="telavoto2.css">
+</head>
+<body>
+  <div class="voting-machine">
+    <img class="logo1" src="img/cer].png" alt="logo">
+    <div class="screen">
+      <p class="training"> TREINAMENTO PARA O JUIZO FINAL</p>
+      <p class="role">Vice Monarca</p>
+      <div class="numero">
+        <input type="text" maxlength="1" readonly>
+        <input type="text" maxlength="1" readonly>
+      </div>   
+    </div>
+
+
+    <div class="keypad">
+      <div class="key" onclick="pressKey('1')">1</div>
+      <div class="key" onclick="pressKey('2')">2</div>
+      <div class="key" onclick="pressKey('3')">3</div>
+      <div class="key" onclick="pressKey('4')">4</div>
+      <div class="key" onclick="pressKey('5')">5</div>
+      <div class="key" onclick="pressKey('6')">6</div>
+      <div class="key" onclick="pressKey('7')">7</div>
+      <div class="key" onclick="pressKey('8')">8</div>
+      <div class="key" onclick="pressKey('9')">9</div>
+      <div class="key0" onclick="pressKey('0')">0</div>
+    
+    <div class="actions">
+      <a href="votos.html">
+        <button class="white-button" onclick="whiteVote()">BRANCO</button>
+      </a>
+      <button class="orange-button" onclick="correct()">CORRIGE</button>
+      <a href="votos.html">
+        <button class="green-button" id="botao" onclick="confirm()">CONFIRMA</button>
+      </a>
+    </div>
+  </div>
+  <script src="telavoto2.js"></script>
+</body>
+</html>
